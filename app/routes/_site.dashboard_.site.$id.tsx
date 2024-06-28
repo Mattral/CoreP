@@ -6,16 +6,16 @@ import {
 } from '@remix-run/node';
 import Sidebar, {
   links as SidebarLinks,
-} from '~/components/pages/siteDashboard/Sidebar/Sidebar';
-import defaultLogo from '~/assets/images/logo.png';
-import styles from '~/styles/dashboard.css';
+} from '../components/pages/siteDashboard/Sidebar/Sidebar';
+import defaultLogo from './assets/images/logo.png';
+import styles from './styles/dashboard.css';
 import { Outlet, useLoaderData } from '@remix-run/react';
 import { authenticator } from '../services/auth/auth.server';
 import { GetPartnerSite } from '../services/api/getPartnerSite.server';
 import { getSession } from '../services/auth/session.server';
 import { ApiResponseStatusEnum } from '../utils/enums/ApiResponseStatusEnum';
 import { useState } from 'react';
-import { links as DashboardHeaderLinks } from '~/components/pages/dashboard/DashboardHeader/DashboardHeader';
+import { links as DashboardHeaderLinks } from '../components/pages/dashboard/DashboardHeader/DashboardHeader';
 
 export const meta: MetaFunction = () => {
   return [

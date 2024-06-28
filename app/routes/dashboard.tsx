@@ -4,12 +4,12 @@ import type {
   MetaFunction,
 } from '@remix-run/node';
 import { Outlet } from '@remix-run/react';
-import { links as DashboardHeaderLinks } from '~/components/pages/dashboard/DashboardHeader/DashboardHeader';
+import { links as DashboardHeaderLinks } from '../components/pages/dashboard/DashboardHeader/DashboardHeader';
 import Sidebar, {
   links as SidebarLinks,
-} from '~/components/pages/dashboard/Sidebar/Sidebar';
-import logo from '~/assets/images/logo.png';
-import styles from '~/styles/dashboard.css';
+} from '../components/pages/dashboard/Sidebar/Sidebar';
+import logo from './assets/images/logo.png';
+import styles from './styles/dashboard.css';
 import { authenticator } from '../services/auth/auth.server';
 import { useState } from 'react';
 

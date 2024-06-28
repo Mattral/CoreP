@@ -7,10 +7,10 @@ import {
   json,
 } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import VerifyForm, {
   links as VerifyFormLinks,
-} from '~/components/pages/auth/verify/VerifyForm';
+} from '../components/pages/auth/verify/VerifyForm';
 import { commitSession, getSession } from '~/services/auth/session.server';
 import { ApiResponseStatusEnum } from '../utils/enums/ApiResponseStatusEnum';
 import { EmailVerification } from '../services/api/emailVerification.server';

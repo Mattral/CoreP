@@ -1,5 +1,5 @@
 import { type MetaFunction } from '@remix-run/node';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import { useOutletContext } from '@remix-run/react';
 import DashboardHeader from '../components/pages/dashboard/DashboardHeader/DashboardHeader';
 

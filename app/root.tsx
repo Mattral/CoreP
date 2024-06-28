@@ -13,7 +13,7 @@ import globalStyles from './styles/global.css';
 import Error404 from './components/error404/Error404';
 import sal from 'sal.js';
 import salStyles from 'sal.js/dist/sal.css';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import NProgress from 'nprogress';
 import nProgressStyles from 'nprogress/nprogress.css';
 

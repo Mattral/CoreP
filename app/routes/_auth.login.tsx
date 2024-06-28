@@ -6,15 +6,15 @@ import {
   redirect,
 } from '@remix-run/node';
 import { useActionData } from '@remix-run/react';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import LoginForm, {
   links as LoginFormLinks,
-} from '~/components/pages/auth/login/LoginForm';
-import { BadRequestError } from '~/utils/errors/BadRequestError.server';
-import { ApiResponseStatusEnum } from '~/utils/enums/ApiResponseStatusEnum';
+} from '../components/pages/auth/login/LoginForm';
+import { BadRequestError } from '../utils/errors/BadRequestError.server';
+import { ApiResponseStatusEnum } from '../utils/enums/ApiResponseStatusEnum';
 import { UserInterface } from '../utils/interfaces/User.interface';
 import { LoginErrorResponseInterface } from '../utils/interfaces/LoginErrorResponse.interface';
-import { authenticator } from '~/services/auth/auth.server';
+import { authenticator } from '../services/auth/auth.server';
 import { commitSession, getSession } from '../services/auth/session.server';
 
 export const meta: MetaFunction = () => {

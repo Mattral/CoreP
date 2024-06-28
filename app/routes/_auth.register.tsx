@@ -4,14 +4,14 @@ import {
   type MetaFunction,
   redirect,
 } from '@remix-run/node';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import RegisterForm, {
   links as RegisterFormLinks,
-} from '~/components/pages/auth/register/RegisterForm';
-import { RegisterAuth } from '~/services/api/register.server';
-import { ApiResponseStatusEnum } from '~/utils/enums/ApiResponseStatusEnum';
-import { BadRequestError } from '~/utils/errors/BadRequestError.server';
-import { getSession, commitSession } from '~/services/auth/session.server';
+} from '../components/pages/auth/register/RegisterForm';
+import { RegisterAuth } from '../services/api/register.server';
+import { ApiResponseStatusEnum } from '../utils/enums/ApiResponseStatusEnum';
+import { BadRequestError } from '../utils/errors/BadRequestError.server';
+import { getSession, commitSession } from '../services/auth/session.server';
 
 export const meta: MetaFunction = () => {
   return [

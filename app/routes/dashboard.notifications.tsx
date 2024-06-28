@@ -1,6 +1,6 @@
 import { useOutletContext } from '@remix-run/react';
 import { useState } from 'react';
-import DashboardHeader from '~/components/pages/dashboard/DashboardHeader/DashboardHeader';
+import DashboardHeader from '../components/pages/dashboard/DashboardHeader/DashboardHeader';
 
 interface NotificationDataInterface {
   id: string;

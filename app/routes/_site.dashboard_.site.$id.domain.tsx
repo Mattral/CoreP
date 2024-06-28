@@ -1,5 +1,5 @@
 import { Link, useOutletContext } from '@remix-run/react';
-import DashboardHeader from '~/components/pages/dashboard/DashboardHeader/DashboardHeader';
+import DashboardHeader from '../components/pages/dashboard/DashboardHeader/DashboardHeader';
 
 export default function DashboardDomain() {
   const {

@@ -4,10 +4,10 @@ import {
   MetaFunction,
   redirect,
 } from '@remix-run/node';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import ForgotPasswordForm, {
   links as ForgotPasswordFormLinks,
-} from '~/components/pages/auth/forgotPassword/ForgotPassword';
+} from '../components/pages/auth/forgotPassword/ForgotPassword';
 
 export const meta: MetaFunction = () => {
   return [

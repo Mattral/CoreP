@@ -1,6 +1,6 @@
 import { MetaFunction } from '@remix-run/node';
 import { Link, useNavigate } from '@remix-run/react';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 
 export const meta: MetaFunction = () => {
   return [

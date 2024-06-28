@@ -1,7 +1,7 @@
 import { Link, useLoaderData } from '@remix-run/react';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import { LinksFunction, LoaderFunctionArgs, json } from '@remix-run/node';
-import styles from '~/components/pages/auth/style/auth.css';
+import styles from '../components/pages/auth/style/auth.css';
 import { getSession } from '../services/auth/session.server';
 
 export const links: LinksFunction = () => [{ rel: 'stylesheet', href: styles }];

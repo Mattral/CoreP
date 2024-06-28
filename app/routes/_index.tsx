@@ -1,18 +1,18 @@
 import { type LinksFunction, type MetaFunction } from '@remix-run/node';
 // import { pageData } from '../constants/landingPageData';
 import { pageData } from '../constants/landingPageData';
-import Hero, { links as HeroLinks } from '~/components/pages/landing/Hero/Hero';
+import Hero, { links as HeroLinks } from '../components/pages/landing/Hero/Hero';
 import Header, {
   links as HeaderLinks,
-} from '~/components/pages/landing/Header/Header';
+} from '../components/pages/landing/Header/Header';
 import logo from '~/assets/images/logo.png';
 import Panel, {
   links as PanelLinks,
-} from '~/components/pages/landing/Panel/Panel';
-import Subscription from '~/components/pages/landing/Subscription/Subscription';
+} from '../components/pages/landing/Panel/Panel';
+import Subscription from '../components/pages/landing/Subscription/Subscription';
 import Footer, {
   links as FooterLinks,
-} from '~/components/pages/landing/Footer/Footer';
+} from '../components/pages/landing/Footer/Footer';
 import TrustedByPanel from '../components/pages/landing/TrustedBy/TrustedBy';
 import PricingPanel, {
   links as PricingPanelLinks,

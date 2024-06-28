@@ -1,14 +1,14 @@
 import { ActionFunctionArgs, LoaderFunctionArgs, json } from '@remix-run/node';
 import { Link, useLoaderData, useOutletContext } from '@remix-run/react';
-import defaultLogo from '~/assets/images/logo.png';
-import { generateRandomString } from '~/utils/generateRandomString.utils';
-import { createNginxConfig } from '~/services/nginx/createNginxConfig.server';
-import { deleteNginxConfig } from '~/services/nginx/deleteNginxConfig.server';
-import { ApiResponseStatusEnum } from '~/utils/enums/ApiResponseStatusEnum';
+import defaultLogo from './assets/images/logo.png';
+import { generateRandomString } from './utils/generateRandomString.utils';
+import { createNginxConfig } from './services/nginx/createNginxConfig.server';
+import { deleteNginxConfig } from './services/nginx/deleteNginxConfig.server';
+import { ApiResponseStatusEnum } from './utils/enums/ApiResponseStatusEnum';
 import {
   createHostedZoneRecord,
   deleteHostedZoneRecord,
-} from '~/services/aws/hostedZoneRecord.server';
+} from './services/aws/hostedZoneRecord.server';
 import { AppConfig } from '../config';
 import { getSession } from '../services/auth/session.server';
 import { CreateNewSite } from '../services/api/createNewSite.server';

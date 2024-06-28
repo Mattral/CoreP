@@ -4,10 +4,10 @@ import type {
   MetaFunction,
 } from '@remix-run/node';
 import { json, useLoaderData } from '@remix-run/react';
-import logo from '~/assets/images/logo.png';
+import logo from './assets/images/logo.png';
 import CheckMailForm, {
   links as CheckMailFormLinks,
-} from '~/components/pages/auth/checkMail/CheckMailForm';
+} from '../components/pages/auth/checkMail/CheckMailForm';
 import { getSession } from '../services/auth/session.server';
 
 export const meta: MetaFunction = () => {
