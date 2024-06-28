@@ -8,7 +8,7 @@
 From your terminal:
 
 ```sh
-npx nx dev core-app
+?
 ```
 
 This starts your app in development mode, rebuilding assets on file changes.
@@ -18,13 +18,13 @@ This starts your app in development mode, rebuilding assets on file changes.
 First, build your app for production:
 
 ```sh
-npx nx build core-app
+ ?
 ```
 
 Then run the app in production mode:
 
 ```sh
-npx nx start core-app
+?
 ```
 
 Now you'll need to pick a host to deploy it to.
